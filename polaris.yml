@@ -9,7 +9,7 @@ project:
 fileSystem:
     python:
       extensions: py
-        files:
+      files:
         - directory: ./test/domains/page_objects/base_pom
         
 analyze:
