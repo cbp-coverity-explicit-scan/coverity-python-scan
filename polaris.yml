@@ -6,12 +6,12 @@ project:
     name: HEAD
     date: "2025-07-17T00:00:00Z"
 
-capture:
-  fileSystem:
+fileSystem:
     python:
-      files:
+      extensions: [py]
+        files:
         - directory: ./test/domains/page_objects/base_pom
-
+        
 analyze:
   mode: central
 
