@@ -1,0 +1,26 @@
+name: coverity-explicit-scan-python
+kind: workflow
+apiVersion: automation.cloudbees.io/v1alpha1
+on:
+  push:
+    branches:
+      - "**"
+  workflow_dispatch:
+  # schedule:
+  #   - cron: 30 3 * * *
+permissions:
+  scm-token-own: read
+  scm-token-org: read
+  id-token: write
+jobs:
+  coverity-scan:
+    steps:
+      - name: checkout Source Code
+        uses: cloudbees-io/checkout@v1
+      
+      - name: Scan with Coverity on Polaris
+        uses: https://github.com/cloudbees-io/coverity-polaris-sast-scan-code@v2
+        with:
+          server-url: ${{ vars.COVERITY_POLARIS_SERVER_URL }}
+          api-token: ${{ secrets.COVERITY_POLARIS_TOKEN }}
+          ref: main
