@@ -9,7 +9,7 @@ project:
 capture:
   fileSystem:
     python:
-      extensions: py
+      extensions: [py]
       files:
         - directory: ./test/domains/page_objects/base_pom
         
