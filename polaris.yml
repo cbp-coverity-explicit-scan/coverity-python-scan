@@ -11,8 +11,7 @@ capture:
     python:
       extensions: [py]
       files:
-        - directory: .
-          regex: ".*/test/domains/page_objects/base_pom/base_pom\\.py$"
+        - directory: ./test/domains/page_objects/base_pom
         
 analyze:
   mode: central
