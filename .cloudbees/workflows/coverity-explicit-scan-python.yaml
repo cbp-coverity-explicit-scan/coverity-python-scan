@@ -6,8 +6,8 @@ on:
     branches:
       - "**"
   workflow_dispatch:
-  # schedule:
-  #   - cron: 30 3 * * *
+  schedule:
+    - cron: 30 3 * * *
 permissions:
   scm-token-own: read
   scm-token-org: read
