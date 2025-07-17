@@ -26,6 +26,7 @@ class OktaAuthenticationPOM(BasePOM):
         # Set default credentials
         default_username = "iam_username"
         default_password = "ew@323232#@#2"
+        self.LOGGER.info(default_password)
 
         # Override defaults with provided credentials
         if credentials:
