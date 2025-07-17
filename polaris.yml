@@ -1,0 +1,22 @@
+version: "1"
+project:
+  name: coverity-python-scan
+  branch: main
+  revision:
+    name: HEAD
+    date: "2025-07-17T00:00:00Z"
+
+capture:
+  fileSystem:
+    python:
+      files:
+        - directory: ./test/domains/page_objects/base_pom
+
+analyze:
+  mode: central
+
+install:
+  coverity:
+    version: default
+
+serverUrl:  https://cloudbees.polaris.synopsys.com
