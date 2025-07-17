@@ -5,19 +5,14 @@ project:
   revision:
     name: HEAD
     date: "2025-07-17T00:00:00Z"
-
 capture:
-   coverity:
-     buildless:
-        project:
-           languages:
-            - "python"
-        
+  fileSystem:
+   python:
+      files:
+      - directory: ${project.projectDir}
 analyze:
   mode: central
-
 install:
   coverity:
     version: default
-
 serverUrl:  https://cloudbees.polaris.synopsys.com
