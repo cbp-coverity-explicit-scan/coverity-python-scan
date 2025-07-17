@@ -6,10 +6,8 @@ project:
     name: HEAD
     date: "2025-07-17T00:00:00Z"
 capture:
-  fileSystem:
-   python:
-      files:
-      - directory: ${project.projectDir}
+  coverity:
+    autoCapture: enable
 analyze:
   mode: central
 install:
