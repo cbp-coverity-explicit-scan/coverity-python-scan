@@ -25,7 +25,7 @@ class OktaAuthenticationPOM(BasePOM):
     def ciam_login(self, credentials=None):
         # Set default credentials
         default_username = "iam_username"
-        default_password = "iam_password"
+        default_password = "ew@323232#@#2"
 
         # Override defaults with provided credentials
         if credentials:
