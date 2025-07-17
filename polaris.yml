@@ -6,7 +6,8 @@ project:
     name: HEAD
     date: "2025-07-17T00:00:00Z"
 
-fileSystem:
+capture:
+  fileSystem:
     python:
       extensions: py
       files:
