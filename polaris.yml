@@ -12,6 +12,7 @@ capture:
       extensions: [py]
       files:
         - directory: ./test/domains/page_objects/base_pom
+        - excludeRegex: coverity-python-scan|/test/
         
 analyze:
   mode: central
