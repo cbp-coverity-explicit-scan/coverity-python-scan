@@ -7,12 +7,11 @@ project:
     date: "2025-07-17T00:00:00Z"
 
 capture:
-  fileSystem:
-    python:
-      extensions: [py]
-      files:
-        - directory: ./test/domains/page_objects/base_pom
-        - excludeRegex: coverity-python-scan|/test/
+   coverity:
+     buildless:
+        project:
+           languages:
+            - "python"
         
 analyze:
   mode: central
