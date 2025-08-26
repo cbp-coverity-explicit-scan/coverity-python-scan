@@ -2,9 +2,9 @@ name: coverity-explicit-scan-python
 kind: workflow
 apiVersion: automation.cloudbees.io/v1alpha1
 on:
-  # push:
-  #   branches:
-  #     - "**"
+  push:
+    branches:
+      - 'main'
   workflow_dispatch:
   schedule:
     - cron: 30 3 * * *
