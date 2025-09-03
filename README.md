@@ -110,7 +110,7 @@ python -m poetry run pytest --cucumber-json cucumber.json
 python -m poetry run pytest --alluredir allure-dir
 ````
 
-### Open Allure Report
+### Open Allure Report!
 
 ````shell
 allure serve allure-dir
